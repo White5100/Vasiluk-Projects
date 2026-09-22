@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Семантическая верстка - Всё о космическом туризме</title>
+</head>
+
+<body>
+	<header>
+		<h1>Путеводитель по Галактике</h1>
+		<p>Исследуйте неизведанные миры и планируйте свой полет к звездам</p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#moon">Луна</a></li>
+			<li><a href="#mars">Марс</a></li>
+			<li><a href="#orbit">Орбита</a></li>
+			<li><a href="#about">О проекте</a></li>
+			<li><a href="#contact">Контакты</a></li>
+		</ul>
+	</nav>
+	<main>
+		<article id="#moon">
+			<header>
+				<h2>Экспедиция на Лунный полюс</h2>
+				<time datetime="2026.09.22">22 сентября 2026</time>
+			</header>
+			<section>
+				<h3>Кратер Тихо - база будущего</h3>
+				<p>Лунные пейзажи поражают своими космическими масштабами и первозданной тишиной</p>
+				<figure>
+					<img src="images/Apollo.jpg" alt="Лунный модуль на поверхности">
+					<figcaption>Модуль нового поколения - символ начала эпохи колонизации</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h3>Море Спокойствия - исторический след</h3>
+				<p>Уникальные ландшафты и знаменитые следы первых астронавтов делают эту локацию легендарной</p>
+			</section>
+			<footer>
+				<p>Автор: Алексей Ковалев</p>
+				<address>Email: Alex@yandex.ru</address>
+			</footer>
+		</article>
+		<section id="subscribe">
+			<h2>Подписка на космический вестник</h2>
+			<form action="#" method="post">
+				<label for="user-email">Ваш Email для получения новостей с орбиты:</label>
+				<input type="email" id="user-email" name="email" placeholder="example@cosmos.ru" required>
+				<button type="submit">Подписаться</button>
+			</form>
+		</section>
+		<section id="schedule">
+			<h2>Расписание межпланетных отправлений</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Пункт назначения</th>
+						<th>Ракета-носитель</th>
+						<th>Дата вылета</th>
+						<th>Статус рейса</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Луна (Кратер Тихо)</td>
+						<td>Starship v3</td>
+						<td>12.11.2026</td>
+						<td>Регистрация открыта</td>
+					</tr>
+					<tr>
+						<td>Орбитальный отель «Мир-2»</td>
+						<td>Falcon Heavy</td>
+						<td>05.12.2026</td>
+						<td>Места ограничены</td>
+					</tr>
+					<tr>
+						<td>Марс (Долина Маринер)</td>
+						<td>Ангара-А5М</td>
+						<td>20.01.2027</td>
+						<td>Бронирование</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<div itemscope itemtype="https://schema.org" style="display:none;">
+			<span itemprop="headline">Межзвездный гид - Все о космическом туризме</span>
+			<span itemprop="author" itemscope itemtype="https://schema.org">
+				<span itemprop="name">Алексей Ковалев</span>
+			</span>
+			<meta itemprop="datePublished" content="2026-11-12">
+			<div itemprop="articleBody">Сайт посвящен развитию частной космонавтики, полетам на Луну, Марс и околоземную
+				орбиту.</div>
+		</div>
+	</main>
+	<aside>
+		<h3>Популярные ракеты</h3>
+		<ul>
+			<li><a href="#angara">Ангара-А5</a></li>
+			<li><a href="#starship">Starship</a></li>
+			<li><a href="falcon">Falcon Heavy</a></li>
+		</ul>
+	</aside>
+	<article id="mars">
+		<h2>Марсианские хроники: от песков к городам</h2>
+		<p>Откройте удивительный мир красной планеты и узнайте о тероформировании</p>
+		<details>
+			<summary>Читать далее о Долине Маринер</summary>
+			<figure>
+				<img src="images/Mars.jpeg" alt="Долина Маринер">
+				<figcaption>Каньон - Долина Маринер</figcaption>
+			</figure>
+			<p>Этот гигантский каньон сочетает в себе грандиозные обрывы и марсианские дюны</p>
+		</details>
+	</article>
+	<article id="orbit">
+		<h2>Жизнь на орбите: невесомость и новые горизонты</h2>
+		<p>Узнайте, как устроены будни современных космических туристов на борту комфортабельных отелей</p>
+		<details>
+			<summary>Читать далее о станции «Мир-2»</summary>
+			<figure>
+				<img src="images/Mir-2.jpeg" alt="Орбитальная станция Мир-2">
+				<figcaption>Станция Мир-2</figcaption>
+			</figure>
+			<p>Этот футуристический комплекс сочетает в себе научные лаборатории и смотровые модули с обзором в 360
+				градусов
+			</p>
+		</details>
+	</article>
+	<section id="about">
+		<h2>О нашем космическом блоге</h2>
+		<p>Мы делимся настоящими историями инженеров, космонавтов и первых туристов</p>
+	</section>
+	<footer>
+		<p>&copy; 2026 Межзвездный гид. Все права защищены.</p>
+		<nav>
+			<a href="#privacy">Безопасность полетов</a>
+			<a href="#terms">Пользовательское соглашение</a>
+		</nav>
+	</footer>
+</body>
+
+</html>
