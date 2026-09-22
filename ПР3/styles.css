@@ -1,0 +1,138 @@
+/* Селектор по тегу */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    color: #2c3e50;
+}
+
+h1 {
+    color: #1e3c72;
+}
+
+/* Селектор по классу */
+.main-header {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-bottom: 3px solid #e9ecef;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Селектор по ID */
+#site-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Дочерний селектор */
+.content > article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+/* Селектор потомков */
+.post p {
+    margin-bottom: 12px;
+}
+
+/* Соседний селектор */
+h2 + p {
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+/* Селектор класса (карточка) */
+.card {
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+
+/* Базовый стиль для всех параграфов */
+p {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+/* Более специфичный селектор */
+.post p {
+    color: #1b4d3e; /* Темно-зеленый */
+}
+
+/* Еще более специфичный */
+.featured-post p {
+    color: #721c24; /* Темно-красный */
+}
+
+/* Самый специфичный */
+.featured-post .intro {
+    color: #4a154b; /* Пурпурный */
+    font-size: 18px;
+}
+
+/* Специфичность: 0,1,0 */
+.important {
+    color: #2e7d32; /* Зеленый акцент */
+    font-weight: bold;
+}
+
+/* Специфичность: 0,1,1 */
+li.important {
+    color: #1565c0; /* Синий акцент */
+    text-decoration: underline;
+}
+
+/* Специфичность: 0,0,2 */
+ul li {
+    color: #e65100; /* Оранжевый */
+}
+
+/* important - переопределяет все  */
+.important {
+    color: #00796b !important; /* Бирюзовый */
+}
+
+/* Наследование свойств */
+.examples {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.card {
+    border: 2px solid #2980b9;
+    padding: inherit; /* Наследует от родителя .examples или .content */
+}
+
+
+li:hover {
+    background-color: #e0f2f1;
+    cursor: pointer;
+}
+
+li:nth-child(odd) {
+    background-color: #fdfefe;
+}
+
+.main-header:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.4s ease;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+.post h2::after {
+    content: " ✦";
+    color: #ffb300;
+}
+
+.card::before {
+    content: "➔ ";
+    color: #2e7d32;
+}
