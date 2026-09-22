@@ -1,138 +1,112 @@
-/* Селектор по тегу */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.65;
     color: #2c3e50;
 }
-
 h1 {
-    color: #1e3c72;
+    color: #1a365d;
 }
-
-/* Селектор по классу */
 .main-header {
     background-color: #f8f9fa;
     padding: 25px;
-    border-bottom: 3px solid #e9ecef;
+    border-bottom: 3px solid #e2e8f0;
 }
-
 .subtitle {
     font-style: italic;
-    color: #7f8c8d;
+    color: #718096;
 }
-
-/* Селектор по ID */
 #site-title {
     text-align: center;
     margin-bottom: 12px;
 }
-
-/* Дочерний селектор */
 .content > article {
     background-color: #ffffff;
     padding: 20px;
-    margin: 15px 0;
+    margin: 12px 0;
 }
-
-/* Селектор потомков */
 .post p {
     margin-bottom: 12px;
 }
-
-/* Соседний селектор */
 h2 + p {
     font-weight: 600;
     font-size: 1.15em;
 }
-
-/* Селектор класса (карточка) */
 .card {
-    border: 1px solid #e2e8f0;
-    padding: 18px;
+    border: 1px solid #cbd5e0;
+    padding: 20px;
     border-radius: 6px;
 }
-
-
-/* Базовый стиль для всех параграфов */
 p {
-    color: #1a1a1a;
-    font-size: 16px;
+    color: #1a202c;
+    font-size: 15px;
 }
-
-/* Более специфичный селектор */
 .post p {
-    color: #1b4d3e; /* Темно-зеленый */
+    color: #1b4d3e;
 }
-
-/* Еще более специфичный */
 .featured-post p {
-    color: #721c24; /* Темно-красный */
+    color: #742a2a;
 }
-
-/* Самый специфичный */
 .featured-post .intro {
-    color: #4a154b; /* Пурпурный */
-    font-size: 18px;
+    color: #4c1d95;
+    font-size: 17px;
 }
-
-/* Специфичность: 0,1,0 */
 .important {
-    color: #2e7d32; /* Зеленый акцент */
+    color: #c53030;
     font-weight: bold;
 }
-
-/* Специфичность: 0,1,1 */
 li.important {
-    color: #1565c0; /* Синий акцент */
+    color: #9b2c2c;
     text-decoration: underline;
 }
-
-/* Специфичность: 0,0,2 */
 ul li {
-    color: #e65100; /* Оранжевый */
+    color: #2b6cb0;
 }
-
-/* important - переопределяет все  */
 .important {
-    color: #00796b !important; /* Бирюзовый */
+    color: #dd6b20 !important;
 }
-
-/* Наследование свойств */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    color: #2c3e50;
+}
+.card {
+    border: 2px solid #3182ce;
+    padding: inherit;
+}
 .examples {
     font-size: 15px;
     font-weight: normal;
 }
-
-.card {
-    border: 2px solid #2980b9;
-    padding: inherit; /* Наследует от родителя .examples или .content */
-}
-
-
 li:hover {
-    background-color: #e0f2f1;
+    background-color: #ebf8ff;
     cursor: pointer;
 }
-
 li:nth-child(odd) {
-    background-color: #fdfefe;
+    background-color: #f7fafc;
 }
-
 .main-header:hover {
-    background-color: #f1f3f5;
+    background-color: #edf2f7;
     transition: background-color 0.4s ease;
 }
-
 p::first-line {
-    font-weight: bold;
+    font-weight: 700;
 }
-
 .post h2::after {
     content: " ✦";
-    color: #ffb300;
+    color: #d69e2e;
 }
-
 .card::before {
-    content: "➔ ";
-    color: #2e7d32;
+    content: "→ ";
+    color: #2f855a;
+}
+:root {
+    --main-theme-color: #3182ce;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.featured-post {
+    animation: fadeIn 0.5s ease-in;
+    border-left: 4px solid currentColor;
 }
