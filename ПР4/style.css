@@ -1,0 +1,112 @@
+.header {
+    background-color: #1e3c72;
+    color: #f8f9fa;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+.navigation ul {
+    display: flex;
+    list-style: none;
+    background-color: #2a5298;
+    padding: 0;
+}
+.navigation li {
+    flex: 1.2;
+    text-align: center;
+}
+.navigation a {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0.85rem;
+    transition: background-color 0.25s;
+}
+.navigation a:hover {
+    background-color: #ff6b6b;
+}
+.content {
+    display: flex;
+    gap: 1.15rem;
+    padding: 1.15rem;
+    flex: 1.1;
+    flex-wrap: wrap;
+    background-color: #fafafa;
+    align-items: stretch;
+}
+.card {
+    flex: 1;
+    background-color: #edf2f7;
+    padding: 1.35rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card h3 {
+    margin-bottom: 0.6rem;
+    color: #1a202c;
+}
+.main {
+    display: flex;
+    min-height: 430px;
+}
+.navigation {
+    flex: 0 0 210px;
+    background-color: #2a5298;
+    color: #f8f9fa;
+    padding: 0.9rem;
+}
+.navigation h2 {
+    margin-bottom: 0.9rem;
+    color: #ff6b6b;
+}
+.sidebar {
+    flex: 0 0 240px;
+    background-color: #edf2f7;
+    padding: 0.9rem;
+    border-left: 3px solid #cbd5e0;
+}
+.footer {
+    background-color: #1e3c72;
+    color: #edf2f7;
+    padding: 2.2rem 1.1rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 0.9rem;
+    background-color: #2a5298;
+    margin: 0 0.4rem;
+    border-radius: 5px;
+}
+.card:nth-child(1) { order: 2; }
+.card:nth-child(2) { order: 1; }
+.card:nth-child(3) { order: 3; }
+.card:first-child { flex: 1.7; }
+.card:last-child { flex: 0.6; }
+@media (max-width: 768px) {
+    .main { flex-direction: column; }
+    .navigation { flex: 0 0 auto; }
+    .sidebar {
+        flex: 0 0 auto;
+        border-left: none;
+        border-top: 3px solid #cbd5e0;
+    }
+    .content { flex-direction: column; }
+    .footer-content {
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+    .footer-section { margin: 0; }
+}

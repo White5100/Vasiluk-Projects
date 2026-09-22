@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeFlow — учебный макет для практической работы №8">
+  <title>CodeFlow — веб-разработка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="CodeFlow — главная">Code<span>Flow</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#home">Главная</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#about">О проекте</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header__button" href="#contacts">Начать</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">УЧЕБНАЯ WEB-СТУДИЯ</p>
+          <h1>Создавай сайты,<br><span>которые работают.</span></h1>
+          <p class="hero__text">Практичный подход к HTML, CSS и современным инструментам веб-разработки. Учись на
+            реальных интерфейсах и собирай сильное портфолио.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#benefits">Изучить возможности</a>
+            <a class="button button--ghost" href="#about">Узнать больше</a>
+          </div>
+          <div class="hero__meta">
+            <div><strong>3</strong><span>направления</span></div>
+            <div><strong>12+</strong><span>практических тем</span></div>
+            <div><strong>100%</strong><span>практика</span></div>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Декоративная карточка с кодом">
+          <div class="hero-card__top"><span></span><span></span><span></span><b>index.html</b></div>
+          <pre><code>&lt;section class="future"&gt;
+  &lt;h1&gt;Build your future&lt;/h1&gt;
+  &lt;p&gt;Learn. Practice. Create.&lt;/p&gt;
+  &lt;a href="#start"&gt;
+    Start coding
+  &lt;/a&gt;
+&lt;/section&gt;</code></pre>
+          <div class="hero-card__glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section" id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ПОЧЕМУ CODEFLOW</p>
+          <h2>Всё необходимое для уверенного старта</h2>
+          <p>Структурированный путь помогает быстрее перейти от теории к самостоятельной практике.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">01</div>
+            <h3>Понятная база</h3>
+            <p>HTML и CSS изучаются последовательно: от структуры страницы до адаптивной верстки.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">02</div>
+            <h3>Практические проекты</h3>
+            <p>Каждая тема закрепляется готовой секцией или небольшим интерфейсом для портфолио.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">03</div>
+            <h3>Готовность к росту</h3>
+            <p>Чистый код и семантическая разметка создают основу для JavaScript и дальнейшего full stack.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div>
+          <p class="eyebrow">О ПРОЕКТЕ</p>
+          <h2>Сначала понимание. Затем скорость.</h2>
+        </div>
+        <p>CodeFlow — концепция учебной платформы, где каждый экран одновременно показывает результат и объясняет
+          структуру интерфейса. Макет рассчитан на десктопную ширину 1440 px и адаптирован для планшетов и смартфонов.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div>
+        <a class="logo logo--footer" href="#">Code<span>Flow</span></a>
+        <p>Учись создавать. Создавай, чтобы расти.</p>
+      </div>
+      <div class="footer__contacts">
+        <a href="mailto:hello@codeflow.example">hello@codeflow.example</a>
+        <div class="socials" aria-label="Социальные сети">
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="VK">VK</a>
+          <a href="#" aria-label="GitHub">GH</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom"><span>© 2026 CodeFlow</span><span>Учебный проект</span></div>
+  </footer>
+</body>
+
+</html>
