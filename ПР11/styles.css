@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    padding: 30px 20px;
+    text-align: center;
+    background: #2f5d8c;
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 22px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.demo-area,
+.parent-box {
+    padding: 15px;
+    border: 1px solid #ccc;
+    min-height: 60px;
+}
+
+.card {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.child {
+    padding: 6px;
+}
+
+.special {
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+input {
+    padding: 7px;
+}
+
+.style-target {
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    background: #e5e5e5;
+    transition: all 0.4s ease;
+}
+
+.active-style {
+    background: #b8d8ff;
+    transform: scale(1.08);
+}
+
+.animated {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.list-item {
+    margin: 6px 0;
+}
+
+.delete-item {
+    margin-left: 10px;
+}
+
+#user-form {
+    display: grid;
+    gap: 10px;
+    max-width: 450px;
+}
+
+#user-form label {
+    display: grid;
+    gap: 4px;
+}
+
+.error-message {
+    margin: 5px 0;
+    padding: 8px;
+    border-left: 4px solid #c62828;
+    background: #ffebee;
+}
+
+.success-message {
+    margin-top: 10px;
+    padding: 12px;
+    border-left: 4px solid #2e7d32;
+    background: #e8f5e9;
+}
+
+.testing-section {
+    border: 2px solid #777;
+}
+
+#test-summary {
+    margin: 12px 0;
+    padding: 10px;
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.test-result {
+    margin: 6px 0;
+    padding: 9px;
+    border-left: 4px solid;
+}
+
+.test-success {
+    border-color: #2e7d32;
+    background: #edf7ee;
+}
+
+.test-failure {
+    border-color: #c62828;
+    background: #ffeded;
+}

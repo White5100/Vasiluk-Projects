@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №11 - DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="dom-tasks.js"></script>
+    <script defer src="dom-tests.js"></script>
+</head>
+<body>
+    <header id="page-header">
+        <h1>Практическая работа №11</h1>
+        <p>JavaScript: манипуляции DOM-деревом</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Создание и вставка элементов</h2>
+            <div id="target1" class="demo-area"></div>
+            <div class="controls">
+                <button id="create-card-btn" type="button">Создать карточку</button>
+                <button id="create-list-btn" type="button">Создать список</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Навигация по DOM</h2>
+            <div id="parent-element" class="parent-box">
+                <div class="child">Первый элемент</div>
+                <div class="child special">Специальный элемент</div>
+                <div class="child">Третий элемент</div>
+            </div>
+            <div id="dom-info"></div>
+        </section>
+
+        <section>
+            <h2>3. Классы и стили</h2>
+            <div id="style-target" class="style-target">Элемент для изменения</div>
+            <div class="controls">
+                <button id="toggle-style" type="button">Переключить стиль</button>
+                <button id="change-header-color" type="button">Случайный цвет header</button>
+                <button id="animate-element" type="button">Анимировать</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Обработка событий</h2>
+            <button id="click-btn" type="button">Нажми меня</button>
+            <p>Количество кликов: <span id="click-counter">0</span></p>
+
+            <label for="text-input">Введите текст:</label>
+            <input id="text-input" type="text">
+            <p>Введено: <span id="input-display"></span></p>
+
+            <p>Откройте консоль разработчика и нажимайте клавиши - информация выводится туда.</p>
+        </section>
+
+        <section>
+            <h2>5. Динамический список</h2>
+            <div class="controls">
+                <input id="item-input" type="text" placeholder="Новый элемент">
+                <button id="add-item-btn" type="button">Добавить</button>
+                <button id="clear-list-btn" type="button">Очистить</button>
+            </div>
+            <ul id="dynamic-list"></ul>
+        </section>
+
+        <section>
+            <h2>6. Форма и валидация</h2>
+            <form id="user-form">
+                <label>
+                    Имя:
+                    <input id="user-name" name="name" type="text">
+                </label>
+
+                <label>
+                    Email:
+                    <input id="user-email" name="email" type="text">
+                </label>
+
+                <label>
+                    Возраст:
+                    <input id="user-age" name="age" type="number">
+                </label>
+
+                <button type="submit">Проверить данные</button>
+            </form>
+
+            <div id="form-output"></div>
+        </section>
+
+        <section class="testing-section">
+            <h2>7. Тестирование</h2>
+            <p>Тесты не запускаются автоматически.</p>
+            <button id="run-tests" type="button">Запустить тестирование</button>
+            <button id="clear-tests" type="button">Очистить результаты</button>
+            <div id="test-summary">Тестирование ещё не запускалось.</div>
+            <div id="test-results"></div>
+        </section>
+    </main>
+</body>
+</html>
